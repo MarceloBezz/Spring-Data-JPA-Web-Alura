@@ -68,6 +68,19 @@ public class SerieService {
         return converteDados(serieRepository.findByGenero(categoria));
     }
 
+    public List<EpisodioDTO> obterTop5EpisodiosPorSerie(Long id) {
+        Optional<Serie> serie = serieRepository.findById(id);
+        
+        if(serie.isPresent()) {
+            return serieRepository.obterTop5EpisodiosPorSerie(serie.get())
+            .stream()
+            .map(e -> new EpisodioDTO(e.getTemporada(), e.getTitulo(), e.getNumeroEpisodio()))
+            .collect(Collectors.toList());
+        }
+
+        return null;
+    }
+
     private List<SerieDTO> converteDados(List<Serie> series) {
         return series
         .stream()
@@ -75,5 +88,6 @@ public class SerieService {
                 s.getGenero(), s.getAtores(), s.getPoster(), s.getSinopse()))
         .collect(Collectors.toList());
     }
+
 
 }

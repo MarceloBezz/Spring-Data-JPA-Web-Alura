@@ -4,7 +4,7 @@ import getDados from "./getDados.js";
 const elementos = {
     top5: document.querySelector('[data-name="top5"]'),
     lancamentos: document.querySelector('[data-name="lancamentos"]'),
-    series: document.querySelector('[data-name="series"]')
+    series: document.querySelector('[data-name="series"]'),
 };
 
 // Função para criar a lista de filmes
