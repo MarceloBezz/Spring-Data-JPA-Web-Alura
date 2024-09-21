@@ -1,17 +1,24 @@
+# SPRING DATA JPA WEB - ALURA
+Aplicação do curso "Java: criando sua primeira API e conectando ao front" da plataforma Alura
 
-![Programação-Formação Java](https://github.com/iasminaraujoc/3355-java-screenmatch-com-jpa/assets/84939115/3c51e000-962d-4dc9-97fc-1d384e2511a2)
+Neste curso, aprofundei a manipulação e persistência de dados com o Spring Data JPA.
+O projeto consiste na visualização das séries cadastradas no curso anterior (https://github.com/MarceloBezz/Spring-Data-JPA-Alura).
+Essa visualização está disponível nas rotas da aplicação, que agora é uma API REST.
 
-# Java: persistência de dados e consultas com Spring Data JPA
+Este projeto também conta com uma melhoria na organização das pastas,
+tendo as funcionalidades organizadas no modelo "Package By Layer".
 
-Projeto desenvolvido no segundo curso da formação Avançando com Java da Alura
-
-
-## 🔨 Objetivos do projeto
-
-- Evoluir no projeto Screenmatch, iniciado no primeiro curso da formação, criando um menu com várias opções;
-- Modelar as abstrações da aplicação através de classes, enums, atributos e métodos;
-- Consumir a API do ChatGPT;
-- Utilizar o Spring Data JPA para persistir dados no banco;
-- Conhecer vários tipos de banco de dados e utilizar o PostgreSQL;
-- Trabalhar com vários tipos de consultas ao banco de dados;
-- Aprofundar na interface JPARepository
+# CONCEITOS IMPORTANTES TRABALHADOS E PRATICADOS
+- Linguagem Java
+- Construção de API REST
+- Criação de rotas da API e serialização dos dados
+- Spring Framework
+- Spring Data JPA
+- Spring Web
+- Lambdas
+- Fluxo de dados(streams)
+- Serialização e desserialização
+- Consumo de APIs
+- Uso da dependência Jackson Bind
+- Banco de dados relacional
+- Hibernate
